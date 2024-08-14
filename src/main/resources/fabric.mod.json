@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "fishoverhaul",
+	"version": "${version}",
+	"name": "Fish Overhaul",
+	"description": "Overhauls Fishing!",
+	"authors": [
+		"Deliveroo!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/fishoverhaul/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.deliveroo.fishoverhaul.FishOverhaul"
+		],
+		"fabric-datagen": [
+			"com.deliveroo.fishoverhaul.FishOverhaulDataGenerator"
+		],
+		"client": [
+			"com.deliveroo.fishoverhaul.FishOverhaulClient"
+		]
+	},
+	"mixins": [
+		"fishoverhaul.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
